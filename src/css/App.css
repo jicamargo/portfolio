@@ -1,0 +1,67 @@
+/* App.css */
+
+:root {
+  --color-font-menu: #fff5e1;
+  --color-font-menu-selected: #f7f6f5;
+  --color-font-title1: #ff6b00;
+  --color-font-title2: #fff5e1;
+  --color-font-text1: #fff5e1;
+  --color-back-bars: #3c3a39;
+  --color-back-dark: #1c1a19;
+  --color-font-title2-dark: #1c1a19;
+  --color-font-text-dark: #1c1a19;
+  --font-toolbar: 'Inter', serif;
+  --font-title1: 'Crete Round', serif;
+  --font-title2: 'Roboto', serif;
+  --font-text1: 'Poppins', serif;
+  --color-font-title1_card: #fff;
+  --color-font-title2_card: #fff;
+  --color-font-text1_card: #fff;
+  --color-background_clear: white;
+  --color-line-div: #212121;
+  --color-back-btn-card: rgba(255, 255, 255, 0.24);
+  --color-main-card-title: #091e42;
+  --color-main-card-text: #091e42;
+  --font-card-title: 'Crete Round', serif;
+  --font-card-text: 'Inter', serif;
+  --font-btn: 'Inter', serif;
+  --font-color-about: #f4f5f7;
+  --transition-transform: transform 0.7s ease;
+  --transition-font: font-size 0.7s ease;
+  --card-gradient: linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%);
+  --color-font-contactme-text: #172b4d;
+  --color-background-clear: #e5e5e5;
+  --color-background-textarea: #fbf8f7;
+  --color-line-div-clear: #dfe1e6;
+  --color-btn-normal: #f55800;
+  --color-btn-active: #e05304;
+  --color-btn-hover: #fff5e1;
+  --color-btn-disabled: #f4f1f0;
+  --color-border-inputfield: #dbd8d7;
+  --color-thick-Line: #0d151e;
+  --color-background-field-focus: #f0d2c0;
+  --color-li_btn_popup: #3c3a39;
+  --font-popup-title1: 'Roboto', serif;
+  --font-popup-title2: 'Roboto', serif;
+  --font-popup-li: 'Poppins', serif;
+  --font-Popup-text: 'Inter', serif;
+  --color-error-msg: red;
+}
+
+
+/* Background styles for the global app */
+#root {
+  background-color: var(--color-background-clear);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Body styles */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+}

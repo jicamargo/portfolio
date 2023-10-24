@@ -1,0 +1,32 @@
+/* MenuBar.css */
+
+
+/* Styles for the slide menu */
+#slidemenu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+#slidemenu.active {
+  right: 0; /* Display the menu when active */
+}
+
+/* Styles for menu items */
+#slidemenu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+#slidemenu a:hover {
+  color: #ff4500; 
+}

@@ -1,0 +1,148 @@
+/* NavBar.css */
+
+header {
+  background-color: var(--color-background-clear);
+  font-family: var(--font-family);
+}
+
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: var(--color-back-bars);
+  padding: 1rem;
+  padding-right: 1rem;
+  font-family: var(--font-toolbar);
+  color: var(--color-font-menu);
+  animation: slideInLeft 1s;
+}
+
+.logo {
+  animation: slideInLeft 2s 0.3s;
+}
+
+.Mylogo {
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--color-font-title2);
+  font-family: var(--font-title2);
+  background-color: var(--color-back-bars);
+  text-decoration: none;
+}
+
+.menu-pc {
+  display: none;
+  font-size: 0.9rem;
+  color: var(--color-font-menu);
+  justify-content: flex-end;
+  align-items: center;
+  order: 99;
+}
+
+.burguer-menu {
+  background-color: var(--color-back-bars);
+}
+
+.burguer-menu-icon {
+  margin-right: 1rem;
+  background-color: var(--color-back-bars);
+  height: 1rem;
+  width: auto;
+}
+
+/****************** MENU MOBILE ***************************/
+.menu-bar-movil .slidemenu {
+  position: fixed;
+  background: var(--color-back-bars);
+  text-align: left;
+  top: 0;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 100vh;
+
+  /* to start hidden and showing it with "slide" animation */
+  left: -100%;
+  transition: all 0.3s ease;
+}
+
+.menu-bar-movil .slidemenu.active {
+  left: 0;
+}
+
+.btn-close-slide-menu {
+  display: block;
+  text-align: right;
+  height: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.btn-close-icon {
+  height: 1rem;
+  width: auto;
+}
+
+.item-menu-mobile {
+  display: block;
+  font-family: var(--font-toolbar);
+  color: var(--color-font-menu);
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid var(--color-back-btn-card);
+}
+
+.item-menu {
+  padding: 0 1rem 0 1rem;
+  background-color: var(--color-back-bars);
+  text-decoration: none;
+  color: var(--color-font-menu);
+}
+
+.item-menu:hover {
+  transform: translateY(-0.2rem);
+  transition: var(--transition-transform), var(--transition-font);
+  font-size: larger;
+  font-weight: bold;
+  color: var(--color-font-menu-selected);
+}
+
+.item-menu-icon {
+  background-color: var(--color-back-bars);
+  height: 1rem;
+  width: auto;
+}
+
+.item-menu-icon:hover {
+  transform: scale(1.5) translateY(-0.2rem);
+  transition: var(--transition-transform);
+}
+
+/*********** MEDIA QUERIES ************/
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+  .burguer-menu {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+
+  .menu-pc {
+    display: flex;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .burguer-menu {
+    display: none;
+  }
+}
