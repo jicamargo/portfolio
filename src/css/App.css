@@ -4,6 +4,7 @@
   --color-font-menu: #fff5e1;
   --color-font-menu-selected: #f7f6f5;
   --color-font-title1: #ff6b00;
+  --color-font-title1_dark: #ff4500;
   --color-font-title2: #fff5e1;
   --color-font-text1: #fff5e1;
   --color-back-bars: #3c3a39;
@@ -26,7 +27,7 @@
   --font-card-text: 'Inter', serif;
   --font-btn: 'Inter', serif;
   --font-color-about: #f4f5f7;
-  --transition-transform: transform 0.7s ease;
+  --transition-transform: transform 0.5s ease;
   --transition-font: font-size 0.7s ease;
   --card-gradient: linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%);
   --color-font-contactme-text: #172b4d;

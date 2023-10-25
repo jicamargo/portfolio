@@ -1,13 +1,14 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-// import MenuBar from './components/MenuBar';
 import './css/App.css';
+
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <MenuBar /> */}
+      <Hero />
     </div>
   );
 }

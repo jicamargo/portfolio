@@ -1,0 +1,39 @@
+.Headline {
+  padding: 0 1.5rem;
+}
+
+.big-title {
+  color: var(--color-font-title1);
+  font-family: var(--font-title1);
+  padding-top: 6.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 105%;
+}
+
+.Supportingtext {
+  padding-top: 0.7rem;
+  color: var(--color-font-title2);
+  font-family: var(--font-title2);
+  font-size: 1.3rem;
+}
+
+.Simpletext {
+  padding-top: 0.7rem;
+  color: var(--color-font-text1);
+  font-family: var(--font-text1);
+  font-style: normal;
+  font-size: 0.85rem;
+}
+
+
+/********************** MEDIA QUERIES *********************************/
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+  .big-title {
+    padding-top: 0;
+  }
+
+}

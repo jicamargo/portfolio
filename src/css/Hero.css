@@ -1,0 +1,34 @@
+.main-frame {
+  display: flex;
+  background-color: var(--color-back-dark);
+  bottom: 0;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+  /* background-image: url("../images/background-mobile.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -7.5rem right;
+  overflow: hidden;
+}
+
+/********************** MEDIA QUERIES *********************************/
+
+/****************** desktop version (768px) ***********************/
+
+
+@media screen and (min-width: 768px) {
+  .content1 {
+    flex-direction: row;
+    /* background-image: url("../images/background.svg"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top -2.5rem right;
+    overflow: hidden;
+    min-height: 60vw;
+    align-items: center;
+  }
+
+}

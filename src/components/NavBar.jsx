@@ -1,11 +1,24 @@
 // NavBar.jsx
 
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import '../css/NavBar.css';
 
 function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header>
+
       <div className="Toolbar">
         <div className="logo">
           <a href="#" className="Mylogo">JIC Software</a>
@@ -13,25 +26,26 @@ function NavBar() {
         <div className="menu-pc">
           <a href="#portfolio" className="item-menu">Portfolio</a>
           <a href="#about" className="item-menu">About</a>
-          <div className="item-menu-group">
-            <a href="#contact" className="item-menu">Contact</a>
-            <img src="%PUBLIC_URL%/images/mailicon.png" alt="email icon" className="item-menu-icon" />
-          </div>
-        </div>
-        <nav id="burguer-menu" className="burguer-menu">
-          <img src="../assets/burguer_menu_icon.png" alt="burguer menu icon" className="burguer-menu-icon" />
-        </nav>
-      </div>
-      <div className="menu-bar-movil">
-        <nav className="slidemenu" id="slidemenu">
-          <a className="btn-close-slide-menu">
-            <img src="../assets/close-icon.png" alt="Close menu icon" className="btn-close-icon" />
+          <a href="#contact" className="item-menu">
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a href="#portfolio" className="item-menu-mobile">Portfolio</a>
-          <a href="#about" className="item-menu-mobile">About</a>
-          <a href="#contact" className="item-menu-mobile">Contact</a>
-        </nav>
+        </div>
+
+        <button id="burguer-menu" className="burguer-menu" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faBars} beatFade className='burguer-menu-icon' />
+        </button>
+
       </div>
+       {/* overlay to prevent scrolling and click when menu is open */}
+      <div className={`overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu} />
+      <nav id="slidemenu" className={isMenuOpen ? 'active' : ''}>
+        <a className="btn-close-slide-menu btn-close-icon"  onClick={closeMenu}>
+          <FontAwesomeIcon icon={faXmark} beatFade />
+        </a>
+        <a href="#portfolio" className="item-menu-mobile"  onClick={closeMenu}>Portfolio</a>
+        <a href="#about" className="item-menu-mobile"  onClick={closeMenu}>About</a>
+        <a href="#contact" className="item-menu-mobile"  onClick={closeMenu}>Contact</a>
+      </nav>
     </header>
   );
 }
