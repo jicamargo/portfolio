@@ -60,6 +60,8 @@ img {
 
 .cnt_img_main_card > img {
   box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
   }
 
 .MainCardTitle {
@@ -127,7 +129,12 @@ img {
   height: 60%;
   padding: 1rem;
   overflow: hidden;
-  /* margin: 1rem 0; */
+}
+
+.cnt_img_card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .sec_card_cnt {

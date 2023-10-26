@@ -12,7 +12,7 @@ const MainCard = ({ work }) => {
           <p className="MainCardDescrip">{work.ShortDescrip}</p>
           <ul className="list_feat">
             {work.technologies.map((tech) => (
-              <li className="li_btn_2" key={tech}>{tech}</li>
+              <li className="li_pill" key={tech}>{tech}</li>
             ))}
           </ul>
           <a id={`btn-${work.id}`} className="SeeProjectBtn project_btn_2 btnCard" href="#">
