@@ -1,4 +1,7 @@
 /* App.css */
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --color-font-menu: #fff5e1;
@@ -7,12 +10,12 @@
   --color-font-title1_dark: #ff4500;
   --color-font-title2: #fff5e1;
   --color-font-text1: #fff5e1;
-  --color-back-bars: #3c3a39;
+  --color-back-bars: #1b1e35;
   --color-back-dark: #1c1a19;
   --color-font-title2-dark: #1c1a19;
   --color-font-text-dark: #1c1a19;
   --font-toolbar: 'Inter', serif;
-  --font-title1: 'Crete Round', serif;
+  --font-title1: 'Lilita One', sans-serif;
   --font-title2: 'Roboto', serif;
   --font-text1: 'Poppins', serif;
   --color-font-title1_card: #fff;
@@ -23,7 +26,7 @@
   --color-back-btn-card: rgba(255, 255, 255, 0.24);
   --color-main-card-title: #091e42;
   --color-main-card-text: #091e42;
-  --font-card-title: 'Crete Round', serif;
+  --font-card-title: 'Lilita One', sans-serif;
   --font-card-text: 'Inter', serif;
   --font-btn: 'Inter', serif;
   --font-color-about: #f4f5f7;

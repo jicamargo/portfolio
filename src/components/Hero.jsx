@@ -6,9 +6,11 @@ import '../css/Hero.css';
 const Hero = () => {
   return (
     <section className="main-frame">
-      <div className="content1">
-        <PersonalPresentation />
-        <SocialIconsBar />
+      <div className="background-image">
+        <div className="content1">
+          <PersonalPresentation />
+          <SocialIconsBar />
+        </div>
       </div>
     </section>
   );

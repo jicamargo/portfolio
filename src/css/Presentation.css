@@ -5,7 +5,7 @@
 .big-title {
   color: var(--color-font-title1);
   font-family: var(--font-title1);
-  padding-top: 6.5rem;
+  padding-top: 1rem;
   font-size: 3rem;
   font-weight: 300;
   line-height: 105%;
@@ -36,4 +36,11 @@
     padding-top: 0;
   }
 
+  .Headline {
+    padding: 0 1.5rem;
+  }
+
+  .Simpletext {
+    padding-bottom: 4rem;
+  }
 }

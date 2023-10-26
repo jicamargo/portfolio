@@ -24,7 +24,8 @@ function NavBar() {
           <a href="#" className="Mylogo">JIC Software</a>
         </div>
         <div className="menu-pc">
-          <a href="#portfolio" className="item-menu">Portfolio</a>
+          <a href="#portfolio" className="item-menu">Projects</a>
+          <a href="#resume" className="item-menu">Resume</a>
           <a href="#about" className="item-menu">About</a>
           <a href="#contact" className="item-menu">
             <FontAwesomeIcon icon={faEnvelope} />
