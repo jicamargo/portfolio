@@ -51,7 +51,12 @@ img {
 
 .cnt_info_main_card {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 0;
+}
+
+.cnt_card_low_part {
+  display: flex;
+  flex-direction: column;
 }
 
 .cnt_img_main_card {
@@ -190,25 +195,23 @@ img {
   text-decoration: none;
   color: var(--color-font-text1_card);
   transition: transform 0.4s ease;
+  transition: color 0.3s, background-color 0.3s; 
   text-align: center;
   letter-spacing: 0.1rem;
   border-radius: 0 0 0.5rem 0.5rem;  
 }
 
-/********* general config to btns  ***********/
-
 .BtnClass {
   font-weight: bold;
   text-decoration: none;
   width: fit-content;
-  transition: transform 0.8s ease;
 }
 
 .project_btn_2 {
   color: var(--color-font-menu);
   font-weight: bold;
   text-decoration: none;
-  transition: transform 0.8s ease;
+  transition: transform 0.8s, color 0.3s, background-color 0.3s ease ; 
 }
 
 .SeeProjectBtn:hover {

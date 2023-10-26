@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PopupProject from './PopupProject';
 
 const MainCard = ({ work }) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div className="header1" id={work.id}>
       <div className="cnt_img_main_card">
-        <img className="main_card_cnt_img" src={'../images/'+work.featureImage} alt={work.alternateTextImage} />
+        <img className="main_card_cnt_img" src={`../images/${work.featureImage}`} alt={work.alternateTextImage} />
       </div>
       <div className="cnt_info_main_card">
         <div className="cnt_card_low_part">
@@ -15,11 +26,19 @@ const MainCard = ({ work }) => {
               <li className="li_pill" key={tech}>{tech}</li>
             ))}
           </ul>
-          <a id={`btn-${work.id}`} className="SeeProjectBtn project_btn_2 btnCard" href="#">
+          <button className="SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
             See Project
-          </a>
+          </button>
         </div>
       </div>
+      {isPopupOpen && (
+        <PopupProject
+          work={work}
+          onClose={handleClosePopup}
+          onVisitLive={(url) => window.open(url)}
+          onVisitSource={(url) => window.open(url)}
+        />
+      )}
     </div>
   );
 };

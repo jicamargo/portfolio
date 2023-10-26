@@ -5,6 +5,7 @@
 }
 
 .background-image {
+  width: 100%;
   position: relative;
   background-image: url("../assets/GradientLayer.webp");
   background-repeat: no-repeat;
