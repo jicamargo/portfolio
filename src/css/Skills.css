@@ -1,0 +1,65 @@
+.skills_cnt {
+  display: flex;
+  flex-direction: column;
+}
+
+.line_div_dark {
+  display: block;
+  width: 100%;
+  border-top: var(--color-font-text1_card) 1px solid;
+  margin: 1.5rem 0;
+}
+
+.skill_col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 1rem;
+}
+
+.ul_skill {
+  flex: 1;
+  font-family: var(--font-card-text);
+  color: var(--color-font-text1_card);
+  background: var(--card-gradient);
+  font-size: 1.2rem;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 1.5rem;
+}
+
+.ul_skill ul {
+  padding: 0;
+}
+
+.skills_col_title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.li_skills {
+  font-family: var(--font-card-text);
+  color: var(--color-font-text1_card);
+  font-size: 1.3rem;
+  list-style: none;
+  text-align: center;
+  margin: 1rem;
+}
+
+
+/********************** MEDIA QUERIES *********************************/
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+ 
+
+}

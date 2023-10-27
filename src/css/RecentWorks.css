@@ -109,15 +109,25 @@ img {
   list-style: none;
   font-family: var(--font-popup-li);
   color: var(--color-li_btn_popup);
+  background-color: var(--color-back_li_btn_popup);
   font-size: 0.7rem;
   padding: 0.2rem 0.5rem;
-  background-color: var(--color-li_btn_popup);
-  color: var(--color-background-clear);
   border-radius: 1rem;
   font-style: normal;
 }
 
 /******************* Cards for other works ***************************/
+.sec_card_cnt {
+  height: 500px;
+  width: 100%;
+  max-width: 300px; 
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1.5rem;
+  justify-self: center;
+  transition: all 0.3s ease;
+}
+
 .info_card {
   display: flex;
   flex-direction: column;
@@ -127,7 +137,12 @@ img {
   box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.info_card:hover {
+  background-color: var(--color-back-dark2);
 }
 
 .cnt_img_card {
@@ -142,21 +157,6 @@ img {
   object-fit: cover;
 }
 
-.sec_card_cnt {
-  height: 670px;
-  width: 100%;
-  max-width: 400px; 
-  display: flex;
-  flex-direction: column-reverse;
-  margin-bottom: 1.5rem;
-  justify-self: center;
-  transition: scale 1s ease;
-}
-
-.sec_card_cnt:hover {
-  scale: 1.05;
-}
-
 /* ************** Fonts and config for cards ******************* */
 .cnt_info_card {
   padding: 0rem 1rem;
@@ -165,22 +165,22 @@ img {
 .Title1_card {
   color: var(--color-font-title1_card);
   font-family: var(--font-card-title);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
 .Title2_card {
   color: var(--color-font-title1_card);
-  font-family: var(--font-card-title);
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-family: var(--font-card-text);
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .CardDescrip {
   color: var(--color-font-text1_card);
   font-family: var(--font-card-text);
-  font-size: 1rem;
-  padding-top: 0.7rem;
+  font-size: 0.9rem;
+  padding-top: 0rem;
 }
 
 /********************** buttons for card ********************/
@@ -277,5 +277,14 @@ img {
     height: 100%;
     justify-content: space-between;
   }
+
+  .BtnMainCard {
+    position: relative;
+    left: -14px;
+    border-radius: 0 2rem 2rem 0rem;
+    height: 4rem;
+    width: 50%;
+  }
+  
 }
 

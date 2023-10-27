@@ -5,10 +5,12 @@ const MainCard = ({ work }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
+    document.body.classList.add('no-scroll');
     setIsPopupOpen(true);
   };
 
   const handleClosePopup = () => {
+    document.body.classList.remove('no-scroll');
     setIsPopupOpen(false);
   };
 
@@ -26,7 +28,7 @@ const MainCard = ({ work }) => {
               <li className="li_pill" key={tech}>{tech}</li>
             ))}
           </ul>
-          <button className="SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
+          <button className="BtnMainCard SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
             See Project
           </button>
         </div>

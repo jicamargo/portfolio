@@ -1,0 +1,47 @@
+.back_dark {
+  background-color: var(--color-back-dark);
+}
+
+.about_cnt {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/laptop-gradient-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+}
+
+.about_info {
+  padding-left: 1rem;
+  width: 80%;
+  align-self: flex-start;
+}
+
+.Tittle_about {
+  padding: 2rem 0 1rem 0;
+}
+
+.DescripAbout {
+  color: var(--font-color-about);
+  font-family: var(--font-card-text);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.resume_btn {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;  ;
+}
+
+
+/********************** MEDIA QUERIES *********************************/
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+  .about_cnt {
+    padding: 2rem 1.5rem;
+    align-items: center;
+  }
+}

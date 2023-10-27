@@ -11,7 +11,8 @@ html {
   --color-font-title2: #fff5e1;
   --color-font-text1: #fff5e1;
   --color-back-bars: #1b1e35;
-  --color-back-dark: #1c1a19;
+  --color-back-dark: #3b304f;
+  --color-back-dark2: #534372;
   --color-font-title2-dark: #1c1a19;
   --color-font-text-dark: #1c1a19;
   --font-toolbar: 'Inter', serif;
@@ -32,7 +33,7 @@ html {
   --font-color-about: #f4f5f7;
   --transition-transform: transform 0.5s ease;
   --transition-font: font-size 0.7s ease;
-  --card-gradient: linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%);
+  --card-gradient: linear-gradient(180deg, rgba(46, 13, 166, 0.559) 0%, rgba(41, 52, 169, 0.274) 61.94%);
   --color-font-contactme-text: #172b4d;
   --color-background-clear: #e5e5e5;
   --color-background-textarea: #fbf8f7;
@@ -41,10 +42,11 @@ html {
   --color-btn-active: #e05304;
   --color-btn-hover: #fff5e1;
   --color-btn-disabled: #f4f1f0;
-  --color-border-inputfield: #dbd8d7;
+  --color-border-inputfield: #1d1c4f;
   --color-thick-Line: #0d151e;
   --color-background-field-focus: #f0d2c0;
-  --color-li_btn_popup: #3c3a39;
+  --color-li_btn_popup: #e5e5e5;
+  --color-back_li_btn_popup: #191837; 
   --font-popup-title1: 'Roboto', serif;
   --font-popup-title2: 'Roboto', serif;
   --font-popup-li: 'Poppins', serif;

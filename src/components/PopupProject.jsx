@@ -14,7 +14,6 @@ const PopupProject = ({ work, onClose, onVisitLive, onVisitSource }) => {
           <FontAwesomeIcon icon={faXmark} />
         </button>
         <h1 className="PopupTitle1 Title2_dark">{work.name}</h1>
-        <h2 className="PopupTitle2 Title2_card">{work.name2}</h2>
         <ul className="list_feat_popup">
           {work.technologies.map((tech) => (
             <li className="li_btn_popup" key={tech}>
@@ -27,14 +26,14 @@ const PopupProject = ({ work, onClose, onVisitLive, onVisitSource }) => {
             <img className="PopupImg" src={`../images/${work.featureImage2}`} alt={work.alternateTextImage} />
           </div>
           <div className="popup-col2">
-            <p className="PopupDescrip">{work.LongDescrip}</p>
+            <div className="PopupDescrip">{work.LongDescrip}</div>
             <ul className="cntBtnPopup">
               <li className="SeeProjectBtn BtnPopup" onClick={() => onVisitLive(work.liveVersion)}>
-                <div>See live</div>
+                <div>Live Demo</div>
                 <FontAwesomeIcon icon={faGears} className="popup-icon-btn" alt="Live demo icon"/>
               </li>
               <li className="SeeProjectBtn BtnPopup" onClick={() => onVisitSource(work.source)}>
-                <div>See source</div>
+                <div>Git Source</div>
                 <FontAwesomeIcon icon={faGithub} className="popup-icon-btn" alt="Source code icon"/>
               </li>
             </ul>
