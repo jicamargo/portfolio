@@ -34,7 +34,9 @@ html {
   --transition-transform: transform 0.5s ease;
   --transition-font: font-size 0.7s ease;
   --card-gradient: linear-gradient(180deg, rgba(46, 13, 166, 0.559) 0%, rgba(41, 52, 169, 0.274) 61.94%);
-  --color-font-contactme-text: #172b4d;
+  --contactme-gradient: linear-gradient(180deg, rgba(231, 224, 199, 0.559) 0%, rgba(169, 135, 41, 0.274) 61.94%);
+  --projects-gradient: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+  --color-font-contactme-text: #0b1425;
   --color-background-clear: #e5e5e5;
   --color-background-textarea: #fbf8f7;
   --color-line-div-clear: #dfe1e6;

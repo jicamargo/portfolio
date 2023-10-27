@@ -4,7 +4,11 @@
   color: var(--color-font-text-dark);
   font-family: var(--font-text1);
   padding: 1rem;
-  margin-top: 2rem;
+  background-image: url("../assets/contactme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 .ContactDescript {
@@ -13,13 +17,17 @@
   color: var(--color-font-contactme-text);
   font-size: 1.5rem;
   text-align: center;
-  line-height: 2.75rem;
+  line-height: 2rem;
+  padding: 2rem;
+  text-shadow: 0 0 25px var(--color-background-clear);
 }
 
 .form_input_fields {
   padding-top: 2rem;
   align-content: center;
   align-items: center;
+  padding: 1rem;
+  background: var(--contactme-gradient);
 }
 
 .input_field {
@@ -36,20 +44,27 @@
   flex-direction: column;
 }
 
+.lblmsg_cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .lblErrorMsg {
   color: var(--color-error-msg);
   font-family: var(--font-toolbar);
   font-size: 0.8rem;
-  margin-left: 1rem;
-  height: 1rem;
   margin-bottom: 1.5rem;
+  text-shadow: 0 0 25px var(--color-background-clear);
 }
 
 .lblErrorMsgGral {
   color: var(--color-error-msg);
   font-family: var(--font-toolbar);
-  font-size: 1.2rem;
-  margin-left: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0 0 12px var(--color-background-clear);
   margin-bottom: 1rem;
 }
 
@@ -69,10 +84,9 @@
 
 .project_btn_submit {
   color: var(--color-font-text1_card);
-  margin-top: 1.3rem;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.8rem 3rem;
 }
 
 /********************** MEDIA QUERIES *********************************/
@@ -84,8 +98,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   .ContactDescript {

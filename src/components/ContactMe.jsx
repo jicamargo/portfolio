@@ -77,7 +77,7 @@ const ContactMe = () => {
   const showErrorMsg = (message, success) => {
     const msgElement = document.querySelector('.lblErrorMsgGral');
     msgElement.innerText = message;
-    msgElement.style.color = success ? 'green' : 'red';
+    msgElement.style.color = success ? 'darkgreen' : 'red';
   };
 
   return (
@@ -123,8 +123,8 @@ const ContactMe = () => {
             />
             <label className="lblErrorMsg"></label>
           </div>
-          <div>
-            <label className="lblErrorMsg lblErrorMsgGral"></label>
+          <div className="lblmsg_cnt">
+            <label className="lblErrorMsgGral"></label>
             <input className="SeeProjectBtn BtnClass project_btn_submit" type="submit" name="btnsubmit" value="Get in touch" />
           </div>
         </div>

@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import RecentWorks from './components/RecentWorks';
 import About from './components/About';
 import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <RecentWorks />
       <About />
       <ContactMe />
+      <Footer />
     </div>
   );
 }
