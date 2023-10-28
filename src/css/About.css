@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding: 2rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 
 .about_info {
@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 768px) {
   .about_cnt {
-    padding: 2rem 1.5rem;
+    padding: 5rem 1.5rem 2rem 1.5rem;
     align-items: center;
   }
 }

@@ -54,6 +54,8 @@ html {
   --font-popup-li: 'Poppins', serif;
   --font-Popup-text: 'Inter', serif;
   --color-error-msg: red;
+  --color-bullet-contact: #4126ad;
+  --color-bullet-contact-hover: #5e47bb;
 }
 
 

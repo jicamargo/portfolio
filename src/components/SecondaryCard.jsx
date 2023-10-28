@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment } from '@fortawesome/free-solid-svg-icons'
 import PopupProject from './PopupProject';
 
 const SecondaryCard = ({ work }) => {
@@ -31,6 +33,9 @@ const SecondaryCard = ({ work }) => {
               ))}
             </ul>
           </div>
+          <a href="#contact" className="link_IconContactMe2">
+            <FontAwesomeIcon icon={faComment} beat className="IconContactMe" href="#contact" />
+          </a>
           <button id={`btn-${work.id}`} className="SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
             See Project
           </button>

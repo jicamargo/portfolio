@@ -9,10 +9,12 @@ function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    document.body.classList.add('no-scroll');
     setIsMenuOpen(!isMenuOpen);
   };
 
   const closeMenu = () => {
+    document.body.classList.remove('no-scroll');
     setIsMenuOpen(false);
   };
 
@@ -25,7 +27,6 @@ function NavBar() {
         </div>
         <div className="menu-pc">
           <a href="#portfolio" className="item-menu">Projects</a>
-          <a href="#resume" className="item-menu">Resume</a>
           <a href="#about" className="item-menu">About</a>
           <a href="#contact" className="item-menu">
             <FontAwesomeIcon icon={faEnvelope} />

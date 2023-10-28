@@ -3,7 +3,7 @@
   flex-direction: column;
   color: var(--color-font-text-dark);
   font-family: var(--font-text1);
-  padding: 1rem;
+  padding: 3rem;
   background-image: url("../assets/contactme.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,7 +97,7 @@
   .contact_cnt {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2.5rem 2.5rem;
+    padding: 8rem 2.5rem 2.5rem 2.5rem;
   }
 
   .ContactDescript {
@@ -106,7 +106,7 @@
   }
 
   .form_input_fields {
-    padding-top: 0;
+    padding-top: 1rem;
     margin: 0 1rem;
   }
 

@@ -14,7 +14,11 @@ const About = () => {
         Excellent problem-solving skills, team worker and a
         confident communicator
         </p>
-        <a className="SeeProjectBtn BtnClass resume_btn" href="">
+        <a
+          className="SeeProjectBtn BtnClass resume_btn"
+          href="https://drive.google.com/file/d/1iJGfYROmAU5Q9YfMw8DrrDsDpaAkDua7/view?usp=sharing"
+          target="_blank"
+        >
           Get My Resume
         </a>
       </div>

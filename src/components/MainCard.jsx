@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import PopupProject from './PopupProject';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment } from '@fortawesome/free-solid-svg-icons'
 
 const MainCard = ({ work }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -28,6 +30,9 @@ const MainCard = ({ work }) => {
               <li className="li_pill" key={tech}>{tech}</li>
             ))}
           </ul>
+          <a href="#contact" className="link_IconContactMe">
+            <FontAwesomeIcon icon={faComment} beat className="IconContactMe" href="#contact" />
+          </a>
           <button className="BtnMainCard SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
             See Project
           </button>
