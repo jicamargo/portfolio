@@ -57,13 +57,13 @@ I'm a dedicated software developer with a strong background in various technolog
 
 ## ⭐️ Key Features <a name="key-features"></a>
 
-- **["First mobile"/Responsive design]**
-- **["Contact me" form with data validation]**
-- **[Animations and transitions]**
-- **[pop-up window to view project detail]**
-- **[Local storage of the user information]**
-- **[Resume Download:]**
-- **[External Links:]** Include links to your social media profiles (LinkedIn, GitHub, Twitter, etc.) for easy access to your online presence.
+- **First mobile/Responsive design**
+- **Contact me form with data validation**
+- **Animations and transitions**
+- **pop-up window to view project detail**
+- **Local storage of the user information**
+- **Resume Download**
+- **External Links:** Include links to your social media profiles (LinkedIn, GitHub, Twitter, etc.) for easy access to your online presence.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
