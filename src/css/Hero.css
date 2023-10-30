@@ -6,12 +6,21 @@
 
 .background-image {
   width: 100%;
+  height: 100%;
   position: relative;
   background-image: url("../assets/GradientLayer.webp");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* enables a smooth change of dimensions */
+  transition: transform 10s ease-in-out;
+  transform-origin: left top;
 }
 
+.background-image.zoomed {
+  transform: scale(1.1); 
+}
 .background-image::before {
   content: "";
   position: absolute;
@@ -19,8 +28,47 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+.content1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; 
+  width: 60px;
+  height: 100%;
+  box-shadow: 0 0 20px 20px rgba(100, 255, 255, 0.5);
+  background-color: rgba(150, 255, 255, 0.533);
+  transform: rotate(10deg);
+  animation: slideIn 1.6s ease-in;
+  animation-iteration-count: 1;
+}
+
+.content1:hover::before {
+  animation-delay: 8s;
+  animation-duration: 0.7s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideIn {
+  0% {
+    left: -100%; 
+  }
+  50% {
+    left: 96%; 
+  }
+  100% {
+    left: 140%; 
+  }
+}
+
+.background-image:hover::before {
+  animation-play-state: paused; /* Detiene la animación al hacer hover */
+}
+
+
 
 .content1 {
   position: relative;

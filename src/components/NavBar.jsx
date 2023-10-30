@@ -26,6 +26,7 @@ function NavBar() {
           <a href="#" className="Mylogo">JIC Software</a>
         </div>
         <div className="menu-pc">
+          <a href="#" className="item-menu">Home</a>
           <a href="#portfolio" className="item-menu">Projects</a>
           <a href="#about" className="item-menu">About</a>
           <a href="#contact" className="item-menu">
@@ -44,6 +45,7 @@ function NavBar() {
         <a className="btn-close-slide-menu btn-close-icon"  onClick={closeMenu}>
           <FontAwesomeIcon icon={faXmark} beatFade />
         </a>
+        <a href="#" className="item-menu-mobile"  onClick={closeMenu}>Home</a>
         <a href="#portfolio" className="item-menu-mobile"  onClick={closeMenu}>Portfolio</a>
         <a href="#about" className="item-menu-mobile"  onClick={closeMenu}>About</a>
         <a href="#contact" className="item-menu-mobile"  onClick={closeMenu}>Contact</a>

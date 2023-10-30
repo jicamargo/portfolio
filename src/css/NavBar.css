@@ -26,7 +26,7 @@ header {
 }
 
 .Mylogo {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   font-size: 1.2rem;
   color: var(--color-font-title2);
   font-family: var(--font-title2);
@@ -78,13 +78,13 @@ header {
 #slidemenu {
   z-index: 99;
   position: fixed;
-  background: var(--color-back-bars);
+  background: var( --color-back-dark2);
   text-align: left;
   top: 0;
   right: -100%;
   padding: 0 1.5rem;
   width: 250px;
-  height: 450px;
+  height: 500px;
   opacity: 0; 
   pointer-events: none;
   box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.4);
@@ -165,10 +165,6 @@ header {
 @media screen and (min-width: 768px) {
   .burguer-menu {
     display: none;
-  }
-
-  .logo {
-    padding-left: 10%;
   }
 
   .menu-pc {
