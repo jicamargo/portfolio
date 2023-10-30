@@ -42,6 +42,7 @@
   color: var(--color-line-div-clear);
   font-family: var(--font-text1);
   font-size: 0.8rem;
+  cursor: none;
 }
 /********************** MEDIA QUERIES *********************************/
 

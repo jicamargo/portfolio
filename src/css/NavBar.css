@@ -104,10 +104,13 @@ header {
 
 .btn-close-slide-menu {
   display: block;
+  background: none;
+  border-style: none;
   text-align: right;
   height: 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  margin-left: auto;
   cursor: pointer;
 }
 

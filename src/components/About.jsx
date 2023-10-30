@@ -18,6 +18,7 @@ const About = () => {
           className="SeeProjectBtn BtnClass resume_btn"
           href="https://drive.google.com/file/d/1iJGfYROmAU5Q9YfMw8DrrDsDpaAkDua7/view?usp=sharing"
           target="_blank"
+          rel="noreferrer"
         >
           Get My Resume
         </a>

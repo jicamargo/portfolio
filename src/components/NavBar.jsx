@@ -23,10 +23,10 @@ function NavBar() {
 
       <div className="Toolbar">
         <div className="logo">
-          <a href="#" className="Mylogo">JIC Software</a>
+          <a href="#home" className="Mylogo">JIC Software</a>
         </div>
         <div className="menu-pc">
-          <a href="#" className="item-menu">Home</a>
+          <a href="#home" className="item-menu">Home</a>
           <a href="#portfolio" className="item-menu">Projects</a>
           <a href="#about" className="item-menu">About</a>
           <a href="#contact" className="item-menu">
@@ -42,10 +42,10 @@ function NavBar() {
        {/* overlay to prevent scrolling and click when menu is open */}
       <div className={`overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu} />
       <nav id="slidemenu" className={isMenuOpen ? 'active' : ''}>
-        <a className="btn-close-slide-menu btn-close-icon"  onClick={closeMenu}>
+        <button className="btn-close-slide-menu btn-close-icon" onClick={closeMenu}>
           <FontAwesomeIcon icon={faXmark} beatFade />
-        </a>
-        <a href="#" className="item-menu-mobile"  onClick={closeMenu}>Home</a>
+        </button>
+        <a href="#home" className="item-menu-mobile"  onClick={closeMenu}>Home</a>
         <a href="#portfolio" className="item-menu-mobile"  onClick={closeMenu}>Portfolio</a>
         <a href="#about" className="item-menu-mobile"  onClick={closeMenu}>About</a>
         <a href="#contact" className="item-menu-mobile"  onClick={closeMenu}>Contact</a>
