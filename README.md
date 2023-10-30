@@ -36,7 +36,7 @@
 <!-- PROJECT DESCRIPTION -->
 # 📖 Portfolio <a name="aboutproject"></a>
 
-**[Portfolio]** Welcome to my personal portfolio! This is the space where I showcase my work, experience, and projects. As a software developer, I'm passionate about crafting creative solutions to real-world problems. Take a look through my portfolio and get to know me better.
+Welcome to my personal portfolio! This is the space where I showcase my work, experience, and projects. As a software developer, I'm passionate about crafting creative solutions to real-world problems. Take a look through my portfolio and get to know me better.
 
 ## 👨🏽 About me <a name="about"></a>
 I'm a dedicated software developer with a strong background in various technologies and programming languages. I believe that technology can be a powerful tool for making a positive impact on the world, and my portfolio reflects my journey in the tech industry.
