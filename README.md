@@ -71,7 +71,7 @@ I'm a dedicated software developer with a strong background in various technolog
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[View live Demo](https://jicamargo.github.io/first-mobile-portfolio/)
+[View live Demo](https://jorgecamargo.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
