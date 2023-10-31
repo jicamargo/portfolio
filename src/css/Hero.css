@@ -12,14 +12,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
-  /* enables a smooth change of dimensions */
-  transition: transform 10s ease-in-out;
+  background-position-y: 0px;
+  transition: all  10s ease-in-out;
   transform-origin: left top;
 }
 
 .background-image.zoomed {
   transform: scale(1.1); 
+  background-position-y: 50px;
 }
 .background-image::before {
   content: "";
