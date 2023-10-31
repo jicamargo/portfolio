@@ -59,7 +59,7 @@ img {
   padding: 0;
   background-color: var(--color-background_clear);
   padding: 1rem;
-  border-radius: 0 0 0.5rem 0.5rem;  
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .cnt_card_low_part {
@@ -68,7 +68,9 @@ img {
 }
 
 .cnt_img_main_card {
+  background-color:  var(--color-background_clear);
   width: auto;
+  max-width: 600px;
 }
 
 .cnt_img_main_card > img {
@@ -81,6 +83,14 @@ img {
   font-family: var(--font-card-title);
   font-size: 2rem;
   font-weight: lighter;
+  color: var(--color-main-card-title);
+  padding-top: 0rem;
+}
+
+.MainCardTitle2 {
+  font-family: var(--font-card-text);
+  font-size: 1.2rem;
+  font-weight: bold;
   color: var(--color-main-card-title);
   padding-top: 0rem;
 }

@@ -23,7 +23,10 @@ const MainCard = ({ work }) => {
       </div>
       <div className="cnt_info_main_card">
         <div className="cnt_card_low_part">
-          <div className="MainCardTitle Title2_dark">{work.name}</div>
+          <div>
+            <div className="MainCardTitle Title1_dark">{work.name}</div>
+            <div className="MainCardTitle2 Title2_dark">{work.name2}</div>
+          </div>
           <p className="MainCardDescrip">{work.ShortDescrip}</p>
           <ul className="list_feat">
             {work.technologies.map((tech) => (
