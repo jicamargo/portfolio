@@ -1,5 +1,6 @@
 .Headline {
   padding: 0 1.5rem;
+  cursor: default;
 }
 
 .big-title {
@@ -9,13 +10,19 @@
   font-size: 3rem;
   font-weight: 300;
   line-height: 105%;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 .Supportingtext {
-  padding-top: 0.7rem;
   color: var(--color-font-title2);
   font-family: var(--font-title2);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  width:fit-content;
+  background-color: var(--color-back-btn-card);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .Simpletext {
