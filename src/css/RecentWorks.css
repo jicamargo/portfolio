@@ -70,13 +70,13 @@ img {
 .cnt_img_main_card {
   background-color:  var(--color-background_clear);
   width: auto;
-  max-width: 600px;
+  max-width: 702px;
 }
 
 .cnt_img_main_card > img {
   box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
-  height: 100%;
   width: 100%;
+  height: auto;
   }
 
 .MainCardTitle {
@@ -205,13 +205,14 @@ img {
 
 .SeeProjectBtn {
   display: block;
-  background-color: var(--color-font-title1);
+  background-color: var(--color-font-title1_dark);
   border: 1px solid var(--color-font-title1);
+  color: var(--color-font-text1_card);
   font-family: var(--font-btn);
   font-weight: bold;
+  font-size: 1.2rem;
   padding: 0.75rem;
   text-decoration: none;
-  color: var(--color-font-text1_card);
   transition: transform 0.4s ease;
   transition: color 0.3s, background-color 0.3s; 
   text-align: center;
