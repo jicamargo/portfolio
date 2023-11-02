@@ -29,7 +29,7 @@ function NavBar() {
           <a href="#home" className="item-menu">Home</a>
           <a href="#portfolio" className="item-menu">Projects</a>
           <a href="#about" className="item-menu">About</a>
-          <a href="#contact" className="item-menu">
+          <a href="#contact" className="item-menu" aria-label="Go to cantact Section">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
@@ -42,7 +42,7 @@ function NavBar() {
        {/* overlay to prevent scrolling and click when menu is open */}
       <div className={`overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu} />
       <nav id="slidemenu" className={isMenuOpen ? 'active' : ''}>
-        <button className="btn-close-slide-menu btn-close-icon" onClick={closeMenu}>
+        <button className="btn-close-slide-menu btn-close-icon" onClick={closeMenu} aria-label="Close menu">
           <FontAwesomeIcon icon={faXmark} beatFade />
         </button>
         <a href="#home" className="item-menu-mobile"  onClick={closeMenu}>Home</a>
