@@ -2,7 +2,7 @@
 
 <div align="center">
   <br/>
-  <img src="public/images/jicsoftware.-cover-2023.png" alt="banner image">
+  <img src="public/images/jicsoftware.-cover-2023.webp" alt="banner image">
   <br/>
   <h3 style="color:blue"><b>Jorge Camargo's Portfolio</b></h3>
   <br/>
