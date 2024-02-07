@@ -18,12 +18,12 @@ const MainCard = ({ work }) => {
 
   return (
     <div className="header1" id={work.id}>
-      <div className="cnt_img_main_card">
+      <div className="cnt_img_main_card"  onClick={handleOpenPopup}>
         <img className="main_card_cnt_img" src={`../images/${work.featureImage}`} alt={work.alternateTextImage} />
       </div>
       <div className="cnt_info_main_card">
         <div className="cnt_card_low_part">
-          <div>
+          <div onClick={handleOpenPopup}>
             <div className="MainCardTitle Title1_dark">{work.name}</div>
             <div className="MainCardTitle2 Title2_dark">{work.name2}</div>
           </div>
@@ -33,12 +33,14 @@ const MainCard = ({ work }) => {
               <li className="li_pill" key={tech}>{tech}</li>
             ))}
           </ul>
-          <a href="#contact" className="link_IconContactMe">
-            <FontAwesomeIcon icon={faComment} beat className="IconContactMe" href="#contact" />
-          </a>
-          <button className="BtnMainCard SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
-            See Project
-          </button>
+          <div className="cnt_btns_card_footer">
+            <button className="BtnMainCard SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
+              See Project
+            </button>
+            <a href="#contact" className="link_IconContactMe">
+              <FontAwesomeIcon icon={faComment} beat className="IconContactMe" href="#contact" />
+            </a>
+          </div>
         </div>
       </div>
       {isPopupOpen && (

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComment } from '@fortawesome/free-solid-svg-icons'
 import PopupProject from './PopupProject';
 
 const SecondaryCard = ({ work }) => {
@@ -19,26 +17,30 @@ const SecondaryCard = ({ work }) => {
   return (
     <div className="sec_card_cnt" id={work.id}>
       <div className="info_card">
-        <div className="cnt_img_card">
-          <img className="card_cnt_img" src={'../images/'+work.featureImage} alt={work.alternateTextImage} />
-        </div>
-        <div className="cnt_card_low_part">
-          <div className="cnt_info_card">
-            <div className="Title1_card">{work.name}</div>
-            <div className="Title2_card">{work.name2}</div>
-            <p className="CardDescrip">{work.ShortDescrip}</p>
-            <ul className="list_feat">
-              {work.technologies.map((tech) => (
-                <li className="li_pill" key={tech}>{tech}</li>
-              ))}
-            </ul>
+        <div className='img_title_descrip'>
+          <div className="cnt_img_card" onClick={handleOpenPopup}>
+            <img className="card_cnt_img" src={'../images/'+work.featureImage} alt={work.alternateTextImage} />
           </div>
-          <a href="#contact" className="link_IconContactMe2">
-            <FontAwesomeIcon icon={faComment} beat className="IconContactMe" href="#contact" />
-          </a>
-          <button id={`btn-${work.id}`} className="SeeProjectBtn project_btn_2 btnCard" onClick={handleOpenPopup}>
-            See Project
-          </button>
+          <div className="cnt_card_low_part">
+            <div className="cnt_info_card" onClick={handleOpenPopup}>
+              <div onClick={handleOpenPopup}>
+                <div className="Title1_card">{work.name}</div>
+              </div>
+              <p className="CardDescrip">
+                {work.ShortDescrip.length > 70
+                  ? `${work.ShortDescrip.slice(0, 70)}...`
+                  : work.ShortDescrip
+                }
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul className="list_feat">
+            {work.technologies.map((tech) => (
+              <li className="li_pill" key={tech}>{tech}</li>
+              ))}
+          </ul>
         </div>
       </div>
       {isPopupOpen && (

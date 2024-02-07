@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBars, faXmark, faHouse, faAddressCard, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import '../css/NavBar.css';
 
 function NavBar() {
@@ -45,10 +45,26 @@ function NavBar() {
         <button className="btn-close-slide-menu btn-close-icon" onClick={closeMenu} aria-label="Close menu">
           <FontAwesomeIcon icon={faXmark} beatFade />
         </button>
-        <a href="#home" className="item-menu-mobile"  onClick={closeMenu}>Home</a>
-        <a href="#portfolio" className="item-menu-mobile"  onClick={closeMenu}>Portfolio</a>
-        <a href="#about" className="item-menu-mobile"  onClick={closeMenu}>About</a>
-        <a href="#contact" className="item-menu-mobile"  onClick={closeMenu}>Contact</a>
+        <a href="#home" className="item-menu-mobile"  onClick={closeMenu}>
+          <FontAwesomeIcon icon={faHouse}/>
+          &nbsp;&nbsp;
+          Home
+        </a>
+        <a href="#portfolio" className="item-menu-mobile"  onClick={closeMenu}>
+          <FontAwesomeIcon icon={faLaptopCode}/>
+          &nbsp;&nbsp;
+          Portfolio
+        </a>
+        <a href="#about" className="item-menu-mobile"  onClick={closeMenu}>
+          <FontAwesomeIcon icon={faAddressCard}/>
+          &nbsp;&nbsp;
+          About
+        </a>
+        <a href="#contact" className="item-menu-mobile"  onClick={closeMenu}>
+          <FontAwesomeIcon icon={faEnvelope}/>
+          &nbsp;&nbsp;
+          Contact
+        </a>
       </nav>
     </header>
   );

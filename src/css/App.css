@@ -6,13 +6,13 @@ html {
 :root {
   --color-font-menu: #fff5e1;
   --color-font-menu-selected: #f7f6f5;
-  --color-font-title1: #ff6b00;
+  --color-font-title1: #f1ded2;
   --color-font-title1_dark: #ff4500;
   --color-font-title2: #fff5e1;
   --color-font-text1: #fff5e1;
   --color-back-bars: #1b1e35;
   --color-back-dark: #3b304f;
-  --color-back-dark2: #534372;
+  --color-back-dark2: #1e0f3c;
   --color-font-title2-dark: #1c1a19;
   --color-font-text-dark: #1c1a19;
   --font-toolbar: 'Inter', serif;

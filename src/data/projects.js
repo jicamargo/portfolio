@@ -1,6 +1,8 @@
 const arrWorks = [
   {
     id: 'project-0',
+    order: 2,
+    highlight: true,
     name: 'Journey Cash',
     name2: 'Get Ready to Budget Like a Pro!',
     ShortDescrip: "Effortlessly manage group finances with this powerful web app. Perfect for travel with friends,"+
@@ -97,6 +99,20 @@ const arrWorks = [
     source: 'https://github.com/jicamargo/coffee-and-cake/',
   },
   {
+    id: 'project-10',
+    name: 'Real Time Search',
+    name2: 'Save, Search, Analyze – Your Queries, Your Insights',
+    ShortDescrip: 'Explore a concise online search project, highlighting an optimized algorithm for efficient searches, smart database storage to avoid word repetitions, and intuitive analytics for enhanced insights.',
+    LongDescrip: 'This application was Built with Ruby on Rails, using postgreSQL, the project aims to redefine how users interact with search functionality. ' 
+    + 'The application dynamically updates search results as users type, providing instant feedback and Analytics',
+    featureImage: 'search.webp',
+    featureImage2: 'search.webp',
+    alternateTextImage: 'Real time search project image.',
+    technologies: ['Ruby on Rails', 'CSS', 'javascript', 'Stimulus', 'PostgreSQL'],
+    liveVersion: 'https://realtimesearch-njvo.onrender.com/',
+    source: 'https://github.com/jicamargo/real_time_search',
+  },
+  {
     id: 'project-7',
     name: 'BookStore',
     name2: "Your Books, Your Way!",
@@ -138,6 +154,24 @@ const arrWorks = [
     technologies: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
     liveVersion: 'https://jicamargo.github.io/todo/dist/',
     source: 'https://github.com/jicamargo/todo',
+  },
+  {
+    id: 'project-11',
+    order: 1,
+    highlight: true,
+    name: 'Depot - Store',
+    name2: 'Where Customer Experience Meets Owner Control!',
+    ShortDescrip: 'Ruby on Rails magic in action! Stimulus, Mailer, Turbo, and Hotwire. Real-time updates. Streamlined processes, robust support, and security layers elevate your business.',
+    LongDescrip: 'Depot: An E-commerce Marvel. Elevate your shopping experience with Depot, a Ruby on Rails-powered e-commerce app. Seamlessly blending simplicity with efficiency,' +
+    'Depot offers customers a user-friendly platform and empowers business owners with streamlined processes, robust support, valuable insights, and security layers. ' +
+    'Experience innovation at every click with features like Stimulus for frontend interactivity, Mailer for order communication, TurboFrames and TurboStreams for dynamic carts,'+
+    'and real-time product updates through Hotwire and Action Cable. ',
+    featureImage: 'depot.webp',
+    featureImage2: 'depot.webp',
+    alternateTextImage: 'Real time search project image.',
+    technologies: ['Ruby on Rails', 'Tailwind CSS', 'javascript', 'Stimulus', 'Hotwire', 'TurboFrames', 'PostgreSQL'],
+    liveVersion: 'http://www.jorgecamargo.live/',
+    source: 'https://github.com/jicamargo/depot',
   },
 ];
 

@@ -9,14 +9,16 @@ const RecentWorks = () => {
     <section id="portfolio" className="recentworks_cnt">
       <div className="RecentWorksSectionTitle">
         <div className="Title_MyRecentWorks">
-          <h3>My Recent Works</h3>
+          <h3>Some of my projects</h3>
         </div>
         <div className="recentworks-line"></div>
       </div>
 
       <div id="grid_works" className="grid_works">
-        {arrWorks.map((work, index) => (
-          index === 0 ? (
+        {arrWorks
+          .sort((a,b) => (a.order || 99) - (b.order || 99))
+          .map((work, index) => (
+          work.highlight !== undefined && work.highlight === true ? (
             <MainCard key={work.id} work={work} />
           ) : (
             <SecondaryCard key={work.id} work={work} />

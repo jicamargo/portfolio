@@ -3,13 +3,25 @@
   cursor: default;
 }
 
+.greeting{
+  margin-top: 6rem;
+}
+
 .big-title {
   color: var(--color-font-title1);
   font-family: var(--font-title1);
   padding-top: 1rem;
-  font-size: 3rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 100;
   line-height: 105%;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.big-title2 {
+  color: var(--color-font-title1);
+  font-family: var(--font-title1);
+  font-size: 2.2rem;
+  font-weight: 300;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
 }
 
